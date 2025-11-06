@@ -56,15 +56,28 @@
 
 //***9**
 // створити пустий об*єкт
-let ob = {};
-ob.name = "Ivan";
-ob.city = "MW";
-ob.age = 45;
-console.log(ob);
-delete UserActivation.city;
-ob["like flowers"] = true;
-console.log(ob);
+// let ob = {};
+// ob.name = "Ivan";
+// ob.city = "MW";
+// ob.age = 45;
+// console.log(ob);
+// delete UserActivation.city;
+// ob["like flowers"] = true;
+// console.log(ob);
 
 // for (const key in ob) {
 //   console.log(ob[key]);
 // }
+
+// let n = Number(prompt("number"));
+// let sum = 0;
+// let k = n / 100;
+// k = Math.floor(k);
+// sum = sum + k;
+// n = n - k * 100;
+// k = n / 10;
+// k = Math.floor(k);
+// sum = sum + k;
+// n = n - k * 10;
+// sum = sum + n;
+// console.log(sum);
