@@ -1,83 +1,46 @@
-// let a = 10;
-// console.log(a); // 10
-// a = 20;
-// console.log(a); // 20
-
-// const b = 10;
-// console.log(b); // 10
-
-//Примитивные типы данных
-// Boolean
-// Number
-// String
-// Symbol
-// undefined //без значения вообще - непонятно
-// null
-// BigInt
-
-// let a = "3";
-// console.log(typeof a); // String
-// console.log(typeof a);
-// console.log(Number.isNaN(a));
-// console.log(typeof Number(a)); // Number
-// a = Number(a);
-// console.log(a);
-// console.log(typeof a);
-// console.log(Number.isNaN(a));
-
-// console.log(Number.parseInt("5ddd")); //5
-// console.log(Number.parseInt("5ddd6")); //6
-// console.log(Number.parseInt("5.5ddd")); //5.5
-// console.log(Number.parseInt("zzxxcc")); // NaN
-
-// console.log(Number.parseFloat("5ddd")); //5
-// console.log(Number.parseFloat("5ddd6")); //6
-// console.log(Number.parseFloat("5.5ddd")); //5.5
-// console.log(Number.parseFloat("zzxxcc")); // NaN
-
-// const a = "Java" + "Script";
-// console.log(a);
-
-// let user = {
-//   name: "Ivan",
-//   age: 30,
-//   isAdmin: true,
+// let ask = (question, yes, no) => {
+//   if (confirm(question)) yes();
+//   else no();
 // };
 
-// for (const key in user) {
-//   console.log(key);
-//   console.log(user[key]);
+// let y = () => {
+//   alert("Ви погодились.");
+// };
+// let n = () => {
+//   alert("Ви скасували виконання.");
+// };
+
+// ask("Ви згодні?", y, n);
+
+// let min = (a, b) => {
+//   return a < b ? a : b;
+// };
+
+// console.log(min(10, 7));
+
+// function checkAge(age) {
+// return age > 18 ? true : confirm('Батьки дозволили?');
 // }
 
-// console.log(Math.random() * (4 - 2) + 2);
+// console.log(document);
 
-// const message = "Welcome to Bahamas!";
-// console.log(message.toUpperCase());
+// const numberRef = document.querySelector('input[name="number"]');
+// const buttonRef = document.querySelector("button");
+// buttonRef.addEventListener("click", () => {
+//   console.log(numberRef.value);
+// });
 
-//***9**
-// створити пустий об*єкт
-// let ob = {};
-// ob.name = "Ivan";
-// ob.city = "MW";
-// ob.age = 45;
-// console.log(ob);
-// delete UserActivation.city;
-// ob["like flowers"] = true;
-// console.log(ob);
+// const girls = [
+//   { age: 23, name: "Оля" },
+//   { age: 29, name: "Аня" },
+//   { age: 10, name: "Юля" },
+//   { age: 20, name: "Катя" },
+// ];
 
-// for (const key in ob) {
-//   console.log(ob[key]);
-// }
-
-// let n = Number(prompt("number"));
 // let sum = 0;
-// let k = n / 100;
-// k = Math.floor(k);
-// sum = sum + k;
-// n = n - k * 100;
-// k = n / 10;
-// k = Math.floor(k);
-// sum = sum + k;
-// n = n - k * 10;
-// sum = sum + n;
-// console.log(sum);
+// let k = 0;
+// for (let el of girls) {
+//   sum += Number(el.age);
+//   k++;
+// }
+// console.log(sum / k);
