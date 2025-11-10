@@ -1,3 +1,55 @@
+let btn = document.querySelector("#b");
+
+btn.addEventListener("click", () => {
+  const ul = document.querySelector("ul");
+  for (let li of ul.children) {
+    li.hidden = !li.hidden;
+  }
+});
+
+// let btn = document.querySelector("#b");
+
+// btn.addEventListener("click", function () {
+//   btn.hidden = true;
+// });
+
+// let tov = document.getElementById("text");
+
+// document.querySelector("#b").addEventListener("click", function () {
+//   tov.hidden = true;
+// });
+
+// let el = document.getElementsByClassName("t");
+// for (e of el) {
+//   console.log(e.value);
+// }
+// class Abonent {
+//   constructor(optionen) {
+//     this.name = optionen.name;
+//     this.number = optionen.number;
+//   }
+
+//   set setName(textName) {
+//     this.name = textName;
+//   }
+
+//   set setNumber(testNumber) {
+//     this.number = testNumber;
+//   }
+
+//   get getAbonent() {
+//     return `Abonent: ${this.name} have a number ${this.number}`;
+//   }
+// }
+
+// let abo1 = new Abonent({ name: "Ivan", number: "123456" });
+// let abo2 = new Abonent({ name: "Hans", number: "987321" });
+// let abo3 = new Abonent({ name: "Kat", number: "777" });
+
+// console.log(abo3.getAbonent);
+// console.log(abo2.getAbonent);
+// console.log(abo1.getAbonent);
+
 // function summ(name, price, count) {
 //   return function () {
 //     console.log(`Tovar ${name} stoit : ${price * count}`);
