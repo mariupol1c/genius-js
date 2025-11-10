@@ -1,11 +1,49 @@
-let btn = document.querySelector("#b");
+function printNumbers(from, to) {
+  const intervalId = setInterval(() => {
+    console.log(from); // выводим текущее число
+    if (from >= to) clearInterval(intervalId); // останавливаем интервал
+    from++; // увеличиваем сам параметр
+  }, 1000);
+}
 
-btn.addEventListener("click", () => {
-  const ul = document.querySelector("ul");
-  for (let li of ul.children) {
-    li.hidden = !li.hidden;
-  }
-});
+printNumbers(1, 10);
+
+// function printNumbers(from, to) {
+//   let current = from;
+
+//   const interv = setInterval(() => {
+//     console.log(current);
+//     current++;
+//     if (current > to) {
+//       clearInterval(interv); // останавливаем интервал после последнего числа
+//     }
+//   }, 1000);
+// }
+
+// Запуск
+printNumbers(1, 10);
+
+// function stop(s) {
+//   return new Promise((res) => setTimeout(res, 1000 * s));
+// }
+
+// async function printNumbers(from, to) {
+//   for (let index = from; index <= to; index++) {
+//     console.log(index);
+//     await stop(1);
+//   }
+// }
+
+// printNumbers(1, 10);
+
+// let btn = document.querySelector("#b");
+
+// btn.addEventListener("click", () => {
+//   const ul = document.querySelector("ul");
+//   for (let li of ul.children) {
+//     li.hidden = !li.hidden;
+//   }
+// });
 
 // let btn = document.querySelector("#b");
 
