@@ -1,17 +1,14 @@
-import MyClassComponent from "./MyClassComponent";
 import "./App.css";
-import MyFunctionalComponent from "./MyFunctionalComponent";
+import "./CounterComponent";
+import CounterComponent from "./CounterComponent";
+import ListComponent from "./ListComponent";
 
 function App() {
-  const copmonent = "functional";
   return (
     <div className="App">
       <header className="App-header">
-        {copmonent === "functional" ? (
-          <MyFunctionalComponent />
-        ) : (
-          <MyClassComponent />
-        )}
+        <ListComponent />
+        <CounterComponent />
       </header>
     </div>
   );
